@@ -220,7 +220,13 @@ bot.on('message', async (msg) => {
 		return readFsShedule(dayNum, weekNum, '', chatId);
 	}
 	if(msgText === 'завтра'){
-		return readFsShedule(dayNum+1, weekNum, '', chatId);
+		if(dayNum == -1){
+			if(weekNum == 1){
+				return readFsShedule(dayNum+1, weekNum+1, '', chatId);
+			}else{
+				return readFsShedule(dayNum+1, weekNum-1, '', chatId);
+			}
+		}
 	}
 	if(msgText === 'пн'){
 		if(weekNum == 1){
