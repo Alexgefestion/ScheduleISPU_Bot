@@ -86,7 +86,7 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 	    parse_mode: 'html'
 	}
 	let shedule = JSON.parse(fs.readFileSync(`schedule/преподаватели/${name}.txt`, { encoding: 'UTF8', flag: 'r+' }));
-
+	let compliteData;
 
 	if(weekNumArg == 0){
 		//выдаем расписание одним сообщением за обе недели
@@ -107,9 +107,7 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 				compliteShedule2 += shedule[i][dayNumArg] + '\n\r';
 			}
 		}
-		bot.sendMessage(chatId, '<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[0]+'</b>'+compliteShedule1+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[1]+'</b>'+compliteShedule2, Keyboard);
-	
-
+		compliteData = name+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[0]+'</b>'+compliteShedule1+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[1]+'</b>'+compliteShedule2;
 
 	}else{
 		let compliteShedule = '';
@@ -118,8 +116,9 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 				compliteShedule += shedule[i][dayNumArg] + '\n\r';
 			}
 		}
-		bot.sendMessage(chatId, '<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[weekNumArg-1]+' '+TextArg+'</b>\n\r'+compliteShedule, Keyboard);
+		compliteData = name+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[weekNumArg-1]+' '+TextArg+'</b>\n\r'+compliteShedule;
 	}
+	bot.sendMessage(chatId, compliteData, Keyboard);
 	return;
 
 }
