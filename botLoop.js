@@ -76,13 +76,36 @@ function readFsShedule(dayNumArg, weekNumArg, TextArg, chatId){
 	for(let i = 0; i < Person.length; i++){
 		if(Person[i][0] == chatId){
 			let shedule = JSON.parse(fs.readFileSync(`schedule/постоянное/${Person[i][1]}`, { encoding: 'UTF8', flag: 'r+' }));
-			let compliteShedule = '';
-			for(let i = 7*(weekNumArg-1); i<7*weekNumArg; i++){
-				if(shedule[i][dayNumArg]!= 'null'){
-					compliteShedule += shedule[i][dayNumArg] + '\n\r';
+			if(weekNumArg == 0){
+				let compliteShedule1 = '\n\r\n\r';
+				let compliteShedule2 = '\n\r\n\r';
+				if(weekNum == 1){
+					compliteShedule1 = '<b> (Текущая) </b>\n\r\n\r';
+				}else{
+					compliteShedule2 = '<b> (Текущая) </b>\n\r\n\r';
 				}
+				for(let i = 0; i<7; i++){
+					if(shedule[i][dayNumArg]!= 'null'){
+						compliteShedule1 += shedule[i][dayNumArg] + '\n\r';
+					}
+				}
+				for(let i = 7; i<14; i++){
+					if(shedule[i][dayNumArg]!= 'null'){
+						compliteShedule2 += shedule[i][dayNumArg] + '\n\r';
+					}
+				}
+				compliteData = '<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[0]+'</b>'+compliteShedule1+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[1]+'</b>'+compliteShedule2;
+			
+			}else{
+				let compliteShedule = '';
+				for(let i = 7*(weekNumArg-1); i<7*weekNumArg; i++){
+					if(shedule[i][dayNumArg]!= 'null'){
+						compliteShedule += shedule[i][dayNumArg] + '\n\r';
+					}
+				}
+				compliteData = '<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[weekNumArg-1]+' '+TextArg+'</b>\n\r\n\r'+compliteShedule;
 			}
-			bot.sendMessage(chatId, '<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[weekNumArg-1]+' '+TextArg+'</b>\n\r'+compliteShedule, {parse_mode: 'html'});
+			bot.sendMessage(chatId, compliteData, {parse_mode: 'html'});
 			return;
 		}
 	}
@@ -110,12 +133,12 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 
 	if(weekNumArg == 0){
 		//выдаем расписание одним сообщением за обе недели
-		let compliteShedule1 = '\n\r';
-		let compliteShedule2 = '\n\r';
+		let compliteShedule1 = '\n\r\n\r';
+		let compliteShedule2 = '\n\r\n\r';
 		if(weekNum == 1){
-			compliteShedule1 = '<b> (Текущая) </b>\n\r';
+			compliteShedule1 = '<b> (Текущая) </b>\n\r\n\r';
 		}else{
-			compliteShedule2 = '<b> (Текущая) </b>\n\r';
+			compliteShedule2 = '<b> (Текущая) </b>\n\r\n\r';
 		}
 		for(let i = 0; i<7; i++){
 			if(shedule[i][dayNumArg]!= 'null'){
@@ -127,7 +150,7 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 				compliteShedule2 += shedule[i][dayNumArg] + '\n\r';
 			}
 		}
-		compliteData = name+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[0]+'</b>'+compliteShedule1+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[1]+'</b>'+compliteShedule2;
+		compliteData = '<b>'+name+'\n\r\n\r'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[0]+'</b>'+compliteShedule1+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[1]+'</b>'+compliteShedule2;
 
 	}else{
 		let compliteShedule = '';
@@ -136,7 +159,7 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 				compliteShedule += shedule[i][dayNumArg] + '\n\r';
 			}
 		}
-		compliteData = name+'\n\r\n\r<b>'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[weekNumArg-1]+' '+TextArg+'</b>\n\r'+compliteShedule;
+		compliteData = '<b>'+name+'\n\r\n\r'+dayOnWeek[dayNumArg]+', '+weekEvenOdd[weekNumArg-1]+' '+TextArg+'</b>\n\r\n\r'+compliteShedule;
 	}
 	bot.sendMessage(chatId, compliteData, Keyboard);
 	return;
@@ -252,63 +275,22 @@ bot.on('message', async (msg) => {
 		}
 	}
 	if(msgText === 'пн'){
-		if(weekNum == 1){
-			await readFsShedule(0, 1, '(Текущая)',  chatId);
-			return readFsShedule(0, 2, '', chatId);
-		}else{
-			await readFsShedule(0, 1, '',  chatId);
-			return readFsShedule(0, 2, '(Текущая)', chatId);
-		}
+		return readFsShedule(0, 0, '(Текущая)',  chatId);
 	}
 	if(msgText === 'вт'){
-		if(weekNum == 1){
-			await readFsShedule(1, 1, '(Текущая)',  chatId);
-			return readFsShedule(1, 2, '', chatId);
-		}else{
-			await readFsShedule(1, 1, '',  chatId);
-			return readFsShedule(1, 2, '(Текущая)', chatId);
-		}
-
+		return readFsShedule(1, 0, '(Текущая)',  chatId);
 	}
 	if(msgText === 'ср'){
-		if(weekNum == 1){
-			await readFsShedule(2, 1, '(Текущая)',  chatId);
-			return readFsShedule(2, 2, '', chatId);
-		}else{
-			await readFsShedule(2, 1, '',  chatId);
-			return readFsShedule(2, 2, '(Текущая)', chatId);
-		}
-
+		return readFsShedule(2, 0, '(Текущая)',  chatId);
 	}
 	if(msgText === 'чт'){
-		if(weekNum == 1){
-			await readFsShedule(3, 1, '(Текущая)',  chatId);
-			return readFsShedule(3, 2, '', chatId);
-		}else{
-			await readFsShedule(3, 1, '',  chatId);
-			return readFsShedule(3, 2, '(Текущая)', chatId);
-		}
-
+		return readFsShedule(3, 0, '(Текущая)',  chatId);
 	}
 	if(msgText === 'пт'){
-		if(weekNum == 1){
-			await readFsShedule(4, 1, '(Текущая)',  chatId);
-			return readFsShedule(4, 2, '', chatId);
-		}else{
-			await readFsShedule(4, 1, '',  chatId);
-			return readFsShedule(4, 2, '(Текущая)', chatId);
-		}
-
+		return readFsShedule(4, 0, '(Текущая)',  chatId);
 	}
 	if(msgText === 'сб'){
-		if(weekNum == 1){
-			await readFsShedule(5, 1, '(Текущая)',  chatId);
-			return readFsShedule(5, 2, '', chatId);
-		}else{
-			await readFsShedule(5, 1, '',  chatId);
-			return readFsShedule(5, 2, '(Текущая)', chatId);
-		}
-
+		return readFsShedule(5, 0, '(Текущая)',  chatId);
 	}
 	//поиск аудитории
 	if(msgText.length < 5){
