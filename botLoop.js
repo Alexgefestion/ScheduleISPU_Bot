@@ -272,6 +272,8 @@ bot.on('message', async (msg) => {
 			}else{
 				return readFsShedule(dayNum+1, weekNum-1, '', chatId);
 			}
+		}else{
+			return readFsShedule(dayNum+1, weekNum, '', chatId);
 		}
 	}
 	if(msgText === 'пн'){
