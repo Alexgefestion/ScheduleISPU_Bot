@@ -382,7 +382,7 @@ bot.on('callback_query', async (msg) => {
 				break;
 			}else{
 				if(i === Person.length-1){
-					Person.push([chatId, data, 1]);
+					Person.push([chatId, msg.message.chat.username+'   '+data, 1]);
 				}
 			}
 		}
