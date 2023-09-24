@@ -1,3 +1,5 @@
+const ss = require('./getSchedule1.js');
+
 const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
 const token = '6524650278:AAGxF-RtKDu8xZSMGrXHCDllcds-5SL8UxA';
@@ -10,6 +12,8 @@ const weekEvenOdd = ["первая неделя", "вторая неделя"];
 let Person = JSON.parse(fs.readFileSync('person.json', { encoding: 'UTF8', flag: 'r+' }));
 
 let date;
+let hours;
+let minutes;
 let dayNum;
 let weekNum;
 
@@ -23,12 +27,25 @@ Date.prototype.getWeek = function() {
 
 function getData(){
 	date = new Date();
+	hours = date.getHours();
+	minutes = date.getMinutes();
 	dayNum = date.getDay()-1;
 	if(date.getWeek() % 2 == 0){weekNum = 2}else{weekNum = 1}
+
+
+	//time event
+	if(dayNum != -1 && hours == 7 && minutes == 30){
+		notification();
+	}
+	if(hours == 21 && minutes == 2){
+	}
+
 }
+
+
 //init
 getData();
-
+setInterval(getData, 60000);
 //init end
 
 function createKeyboardFS(path, callback, arg1, arg2) {
@@ -218,7 +235,11 @@ bot.on('message', async (msg) => {
 
 	//text commands
 	if(msgText === 'сегодня'){
-		return readFsShedule(dayNum, weekNum, '', chatId);
+		if(dayNum == -1){
+			return readFsShedule(6, weekNum, '', chatId);
+		}else{
+			return readFsShedule(dayNum, weekNum, '', chatId);
+		}
 	}
 	if(msgText === 'завтра'){
 		if(dayNum == -1){
@@ -291,7 +312,6 @@ bot.on('message', async (msg) => {
 	//поиск аудитории
 	if(msgText.length < 5){
 		if(msgText[0] === 'А' || msgText[0] === 'а'){
-			console.log('aaaaaaaa')
 		}
 		if(msgText[0] === 'Б' || msgText[0] === 'б'){
 			
@@ -388,22 +408,29 @@ bot.on('callback_query', async (msg) => {
 	}
 	if(data[0] === 'T'){
 		if(data[1] === 'с'){
-			await readFsSheduleTeacher(dayNum, weekNum, '(Текущая)', data.slice(2, data.length), chatId);
-			return bot.deleteMessage(chatId, messageId);
+			if(dayNum == -1){
+				await readFsSheduleTeacher(6, weekNum, '(Текущая)', data.slice(2, data.length), chatId);
+				return bot.deleteMessage(chatId, messageId);
+			}else{
+				await readFsSheduleTeacher(dayNum, weekNum, '(Текущая)', data.slice(2, data.length), chatId);
+				return bot.deleteMessage(chatId, messageId);
+			}
 		}
+
 		if(data[1] === 'з'){
 			if(dayNum == -1){
 				if(weekNum == 1){
-					await readFsSheduleTeacher(dayNum+1, weekNum+1, '(Текущая)', data.slice(2, data.length),  chatId);
+					await readFsSheduleTeacher(dayNum+1, weekNum+1, '', data.slice(2, data.length),  chatId);
 					return bot.deleteMessage(chatId, messageId);
 				}else{
-					await readFsSheduleTeacher(dayNum+1, weekNum-1, '(Текущая)', data.slice(2, data.length),  chatId);
+					await readFsSheduleTeacher(dayNum+1, weekNum-1, '', data.slice(2, data.length),  chatId);
 					return bot.deleteMessage(chatId, messageId);
 				}
 			}
 			await readFsSheduleTeacher(dayNum+1, weekNum, '(Текущая)', data.slice(2, data.length),  chatId);
 			return bot.deleteMessage(chatId, messageId);
 		}
+
 		if(data[1] === '0' || data[1] === '1' || data[1] === '2' || data[1] === '3' || data[1] === '4' || data[1] === '5'){
 			await readFsSheduleTeacher(data[1], 0, '(Текущая)', data.slice(2, data.length),  chatId);
 			return bot.deleteMessage(chatId, messageId);
