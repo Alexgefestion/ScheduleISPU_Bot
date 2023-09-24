@@ -1,4 +1,5 @@
-const ss = require('./getSchedule1.js');
+const getScheduleStudent = require('./getScheduleStudent.js');
+const getScheduleTeacher = require('./getScheduleTeacher.js');
 
 const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
