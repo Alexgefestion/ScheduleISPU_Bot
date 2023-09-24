@@ -106,6 +106,4 @@ function formationSchedule(data) {
 	
 }
 
-directiryBypass();
-
 
