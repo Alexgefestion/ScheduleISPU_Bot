@@ -391,6 +391,15 @@ bot.on('callback_query', async (msg) => {
 			return bot.deleteMessage(chatId, messageId);
 		}
 		if(data[1] === 'з'){
+			if(dayNum == -1){
+				if(weekNum == 1){
+					await readFsSheduleTeacher(dayNum+1, weekNum+1, '(Текущая)', data.slice(2, data.length),  chatId);
+					return bot.deleteMessage(chatId, messageId);
+				}else{
+					await readFsSheduleTeacher(dayNum+1, weekNum-1, '(Текущая)', data.slice(2, data.length),  chatId);
+					return bot.deleteMessage(chatId, messageId);
+				}
+			}
 			await readFsSheduleTeacher(dayNum+1, weekNum, '(Текущая)', data.slice(2, data.length),  chatId);
 			return bot.deleteMessage(chatId, messageId);
 		}
