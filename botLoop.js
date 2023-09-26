@@ -178,7 +178,7 @@ function notification(){
 					compliteShedule += shedule[i][dayNum] + '\n\r';
 				}
 			}
-			bot.sendMessage(Person[i][0], text+'<b>'+dayOnWeek[dayNum]+', '+weekEvenOdd[weekNum-1]+' '+'</b>\n\r'+compliteShedule, {parse_mode: 'html'});
+			bot.sendMessage(Person[i][0], text+'<b>'+dayOnWeek[dayNum]+', '+weekEvenOdd[weekNum-1]+' '+'</b>\n\r\n\r'+compliteShedule, {parse_mode: 'html'});
 		}
 	}
 }
@@ -188,7 +188,8 @@ function adminCommand(){
 	reply_markup: {
 	    inline_keyboard: [
 	    		[{text: 'person', callback_data: 'person'}],
-	    		[{text: 'notification', callback_data: 'notification'}]
+	    		[{text: 'logs', callback_data: 'logs'}],
+	    		[{text: 'clearlogs', callback_data: 'clearlogs'}]
 	    	]
 	    },
 	    parse_mode: 'html'
@@ -213,7 +214,7 @@ bot.setMyCommands([
 
 
 bot.on('message', async (msg) => {
-	console.log(msg);
+	fs.appendFileSync('logs/log.txt', JSON.stringify(msg, ['chat','id','first_name','last_name','username','date','text'], 4) + '\n\r');
 	const chatId = msg.chat.id;
 	const msgText = msg.text;
 
@@ -331,7 +332,7 @@ bot.on('message', async (msg) => {
 
 
 bot.on('callback_query', async (msg) => {
-	console.log(msg);
+	fs.appendFileSync('logs/log.txt', JSON.stringify(msg, ['message','chat','id','first_name','last_name','username','date','data'], 4) + '\n\r');
 	const messageId = msg.message.message_id;
 	const chatId = msg.message.chat.id;
 	const msgText = msg.message.text;
@@ -430,9 +431,11 @@ bot.on('callback_query', async (msg) => {
 		await bot.sendMessage(1760868440, Person.toString())
 		return;
 	}
-	if(data === 'notification'){
-		notification();
-		return;
+	if(data === 'logs'){
+		bot.sendMessage(1760868440, fs.readFileSync('logs/log.txt', { encoding: 'UTF8', flag: 'r+' }))
+	}
+	if(data === 'clearlogs'){
+		fs.writeFileSync('logs/log.txt', 'start' )
 	}
 
 

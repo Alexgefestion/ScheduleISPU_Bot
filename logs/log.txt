@@ -1,0 +1,43 @@
+start{
+    "message": {
+        "chat": {
+            "id": 1760868440,
+            "first_name": "Александр",
+            "username": "Alexgefestion"
+        },
+        "date": 1695750690
+    },
+    "id": "7562872362540104233",
+    "data": "logs"
+}
+{
+    "chat": {
+        "id": 686150232,
+        "first_name": "Владислав",
+        "username": "novose39"
+    },
+    "date": 1695750849,
+    "text": "завтра"
+}
+{
+    "message": {
+        "chat": {
+            "id": 1760868440,
+            "first_name": "Александр",
+            "username": "Alexgefestion"
+        },
+        "date": 1695750690
+    },
+    "id": "7562872365889553366",
+    "data": "logs"
+}
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "date": 1695751184,
+    "text": "/help"
+}
+
