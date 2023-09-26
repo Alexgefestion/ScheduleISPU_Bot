@@ -1,5 +1,9 @@
-const getScheduleStudent = require('./getScheduleStudent.js');
-const getScheduleTeacher = require('./getScheduleTeacher.js');
+const GetScheduleStudent = require('./getScheduleStudent.js');
+const GetScheduleTeacher = require('./getScheduleTeacher');
+
+const ScheduleTeacher = new GetScheduleTeacher();
+const ScheduleStudent = new GetScheduleStudent();
+
 
 const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
@@ -38,7 +42,11 @@ function getData(){
 	if(dayNum != -1 && hours == 7 && minutes == 30){
 		notification();
 	}
-	if(hours == 21 && minutes == 2){
+	if(dayNum == -1 && hours == 20 && minutes == 0){
+		ScheduleTeacher.directiryBypass();
+	}
+	if(dayNum == -1 && hours == 22 && minutes == 30){
+		ScheduleStudent.directiryBypass();
 	}
 
 }

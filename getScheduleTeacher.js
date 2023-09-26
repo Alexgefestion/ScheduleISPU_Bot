@@ -8,102 +8,109 @@ const namePrepod = ["Аббясов А.М.","Аксаковская Л.Н.","А�
 const numPrepod = ["40171","40283","70134","40835","30207","40491","10415","40194","10382","40136","30752","40614","2000034","40210","10654","2000145","30549","30793","20406","20569","20513","10421","71422","40204","21075","40319","20810","2000041","2000142","10306","2000109","2000083","30667","30707","10491","70143","41746","2000105","10411","30847","20106","10838","10243","30709","20581","30464","37009","40293","40887","42812","71410","10808","30458","30290","40331","40388","20111","30219","40255","11101","20616","53205","30153","20110","20415","40135","48302","71436","20495","74807","11304","10347","40703","72605","2000037","70200","10906","30397","11106","11037","11401","2000099","73213","20613","74402","30656","30533","20648","30517","10377","74103","2000110","88242","2000134","40370","72411","30714","40924","10836","40834","20217","2000113","21003","71803","20156","31502","398","46505","40971","20506","2000026","2000143","2000108","71424","41702","30213","10709","71201","11128","41744","30617","40443","40940","30749","10413","10205","30668","40511","40280","20497","2000062","40982","194","41716","2000018","40590","2000031","74503","168","40212","11007","2000115","2000147","20551","75303","10492","40815","2000002","10367","20650","40938","49415","20510","40002","42508","2000033","40534","2000088","40275","40607","31201","2000057","30331","30474","30513","10354","30614","41718","2000049","40629","30881","10555","40969","84536","2000090","40908","30889","30680","10304","40866","30715","30152","2000102","20514","11023","30106","11004","10244","30561","74808","2000087","10486","30850","95211","42506","40567","2000139","20164","2000129","10739","10928","10728","30511","20223","40442","10646","2000136","30553","30775","10574","20410","40951","10342","2000084","30711","30782","70210","20430","10476","40506","40610","53334","10309","40441","31303","30254","80213","20120","30388","30314","40517","20460","30121","40907","40394","2000035","40759","45007","40952","40631","2000123","2000107","30344","40393","30897","41516","71405","40432","20152","2000126","10662","30787","40508","45501","72631","20595","30681","20488","40741","10416","11102","20163","41715","30795","41509","2000125","73601","30346","41768","40585","20897","10462","40970","30122","40229","20855","30566","20654","30606","20501","30366","2000029","10830","30308","41780","30184","30433","30637","20596","20587","2000098","30410","72311","72601","30407","2000133","2000150","40892","30718","70199","74802","60066","10364","20903","71617","40910","30480","40706","30118","30768","40813","40179","10318","30682","74102","40113","10130","75235","30451","2000032","43605","20925","40705","10736","40222","20496","30766","30378","74833","10572","42528","2000149","10207","30116","30683","20920","2000117","2000118","42517","30399","40520","40613","53404","31001","71804","30229","10742","10001","2000122","41724","42810","30741","20605","41058","30424","2000100","74832","10414","30285","30416","20571","30470","11302","2000052","30601","74804","40504","41205","2000047","30304","10412","71431","30201","45005","30734","2000066","2000076","2000010"]
 let numberPrepod = 0;
 
-function directiryBypass() {
-	let body;
-	function bypass(){
-		console.log(namePrepod[numberPrepod]);
-		body = rawBody + numPrepod[numberPrepod];
-		setTimeout(GetSchedule, 100, body);
-		if(numberPrepod < namePrepod.length){
-			numberPrepod++;
-			setTimeout(bypass, 1000);
-		}
-	}
-	bypass();
-}
-// GetSchedule(body);
-async function GetSchedule(bodyArg) {
-	let response = await fetch(requestURL, {
-  		method: 'POST',
-  		headers: {
-    		"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-    		"accept-language": "ru,ru-RU;q=0.9,en;q=0.8,en-GB;q=0.7,en-CA;q=0.6,en-US;q=0.5,en-NZ;q=0.4,en-ZA;q=0.3,en-IN;q=0.2,en-AU;q=0.1,be;q=0.1",
-    		"cache-control": "no-cache",
-    		"content-type": "application/x-www-form-urlencoded",
-    		"pragma": "no-cache",
-    		"upgrade-insecure-requests": "1",
-  		},
-  			body: `${bodyArg}`
-	});
-	if (response.ok) {
-		let data = await response.text();
-		formationSchedule(data);
-	} else {
-		console.log("error HTTP: " + response.status) ;
-	}
 
-}
-function formationSchedule(data) {
-	let Offset = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-	let Rowspan = [[0,0,0,0,0,0,7],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,7],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],];
-	let RawSheet = [['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','']];
-	let CompliteSheet = [['','','','','','','Выходной'],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','Выходной'],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','']];
-	
-	data = data.split('table')[5];//выделяем таблицу с расписанием
-	data = data.split('<tr');//отделение строки
-	for (let i = 3; i < data.length ; i++) {
-		data[i] = data[i].split('<td');//отделение ячейки из строк
-		if(i == 3 || i == 10){
-			createRawSheet(2, i);
-		}else{
-			createRawSheet(1, i);
-		}
-	}
-	createCompliteSheet(RawSheet);
-	function createRawSheet(num, i) {
+class GetScheduleTeacher {
+	constructor(){
 
-		//i это строка. j это столбец
+	}
+	directiryBypass() {
+		let body;
+		function bypass(){
+			console.log(namePrepod[numberPrepod]);
+			body = rawBody + numPrepod[numberPrepod];
+			setTimeout(GetScheduleTeacher.getSchedule, 100, body);
+			if(numberPrepod < namePrepod.length){
+				numberPrepod++;
+				setTimeout(bypass, 500);
+			}
+		}
+		bypass();
+	}
+	// GetSchedule(body);
+	static async getSchedule(bodyArg) {
+		let response = await fetch(requestURL, {
+	  		method: 'POST',
+	  		headers: {
+	    		"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+	    		"accept-language": "ru,ru-RU;q=0.9,en;q=0.8,en-GB;q=0.7,en-CA;q=0.6,en-US;q=0.5,en-NZ;q=0.4,en-ZA;q=0.3,en-IN;q=0.2,en-AU;q=0.1,be;q=0.1",
+	    		"cache-control": "no-cache",
+	    		"content-type": "application/x-www-form-urlencoded",
+	    		"pragma": "no-cache",
+	    		"upgrade-insecure-requests": "1",
+	  		},
+	  			body: `${bodyArg}`
+		});
+		if (response.ok) {
+			let data = await response.text();
+			GetScheduleTeacher.formationSchedule(data);
+		} else {
+			console.log("error HTTP: " + response.status) ;
+		}
+
+	}
+	static formationSchedule(data) {
+		this.formationSchedule.Offset = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		this.formationSchedule.Rowspan = [[0,0,0,0,0,0,7],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,7],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],];
+		this.formationSchedule.RawSheet = [['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','']];
+		this.formationSchedule.CompliteSheet = [['','','','','','','Выходной'],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','Выходной'],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','']];
 		
-		for (let j = 1 + num; j < data[i].length ; j++) {
-			let rowspan = parseInt(data[i][j][(data[i][j].indexOf('rowspan'))+9]);
-			let colorSquare = '⬜️';
-
-			if(data[i][j].indexOf('лек.') != -1){
-				colorSquare = '🟧';
+		data = data.split('table')[5];//выделяем таблицу с расписанием
+		data = data.split('<tr');//отделение строки
+		for (let i = 3; i < data.length ; i++) {
+			data[i] = data[i].split('<td');//отделение ячейки из строк
+			if(i == 3 || i == 10){
+				createRawSheet(2, i);
 			}else{
-				if(data[i][j].indexOf('сем.') != -1){
-					colorSquare = '🟩';
+				createRawSheet(1, i);
+			}
+		}
+		createCompliteSheet(GetScheduleTeacher.formationSchedule.RawSheet);
+		function createRawSheet(num, i) {
+
+			//i это строка. j это столбец
+			
+			for (let j = 1 + num; j < data[i].length ; j++) {
+				let rowspan = parseInt(data[i][j][(data[i][j].indexOf('rowspan'))+9]);
+				let colorSquare = '⬜️';
+
+				if(data[i][j].indexOf('лек.') != -1){
+					colorSquare = '🟧';
 				}else{
-					if(data[i][j].indexOf('лаб.') != -1){
-						colorSquare = '🟪';
+					if(data[i][j].indexOf('сем.') != -1){
+						colorSquare = '🟩';
+					}else{
+						if(data[i][j].indexOf('лаб.') != -1){
+							colorSquare = '🟪';
+						}
 					}
 				}
-			}
-			
+				
 
-			if(rowspan > 1){
-				for(let long = 1; long < rowspan; long++){
-					Rowspan[i-3][j-num-1] = 1;
+				if(rowspan > 1){
+					for(let long = 1; long < rowspan; long++){
+						GetScheduleTeacher.formationSchedule.Rowspan[i-3][j-num-1] = 1;
+					}
+				}
+				data[i][j] = data[i][j].split('>')[1].split('<')[0];
+				if(data[i][j]!= ''){
+					GetScheduleTeacher.formationSchedule.RawSheet[i-3][j-num-1] = colorSquare + startLess[i-3]+"-"+endLess[i-4+rowspan]+data[i][j];
+				}else{
+					GetScheduleTeacher.formationSchedule.RawSheet[i-3][j-num-1] = 'null';
 				}
 			}
-			data[i][j] = data[i][j].split('>')[1].split('<')[0];
-			if(data[i][j]!= ''){
-				RawSheet[i-3][j-num-1] = colorSquare + startLess[i-3]+"-"+endLess[i-4+rowspan]+data[i][j];
-			}else{
-				RawSheet[i-3][j-num-1] = 'null';
-			}
 		}
-	}
-	function createCompliteSheet(RawSheet){
-		for(let j = 0; j < 7; j++){
-			for(let i = 0; i < 14; i++){
-				CompliteSheet[i][j+Offset[i]] = RawSheet[i][j];
-				Offset[i+1] += Rowspan[i][j];
+		function createCompliteSheet(RawSheet){
+			for(let j = 0; j < 7; j++){
+				for(let i = 0; i < 14; i++){
+					GetScheduleTeacher.formationSchedule.CompliteSheet[i][j+GetScheduleTeacher.formationSchedule.Offset[i]] = RawSheet[i][j];
+					GetScheduleTeacher.formationSchedule.Offset[i+1] += GetScheduleTeacher.formationSchedule.Rowspan[i][j];
+				}
 			}
+			fs.writeFileSync(`schedule/преподаватели/${namePrepod[numberPrepod-1]}.txt`, JSON.stringify(GetScheduleTeacher.formationSchedule.CompliteSheet));
 		}
-		fs.writeFileSync(`schedule/преподаватели/${namePrepod[numberPrepod-1]}.txt`, JSON.stringify(CompliteSheet));
+		
 	}
-	
+
+
 }
-
-
+module.exports = GetScheduleTeacher;
