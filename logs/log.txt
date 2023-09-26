@@ -1,73 +1,1 @@
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695755216,
-    "text": "сегодня"
-}
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695755522,
-    "text": "сегодня"
-}
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695755524,
-    "text": "завтра"
-}
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695755527,
-    "text": "пн"
-}
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695755544,
-    "text": "ср"
-}
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695756000,
-    "text": "сегодня"
-}
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695756146,
-    "text": "завтра"
-}
-{
-    "chat": {
-        "id": 1760868440,
-        "first_name": "Александр",
-        "username": "Alexgefestion"
-    },
-    "date": 1695756627,
-    "text": "/choose"
-}
-
+start
