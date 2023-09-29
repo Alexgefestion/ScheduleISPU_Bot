@@ -1,1 +1,128 @@
-[["🟩8.00-9.35 Физика сем. 2-11 В356","null","🟪8.00-11.25 Физика лаб. 2-11х В303","null","🟧8.00-9.35 Физика лек. 2-11, 12, 12А Б029","null","null"],["null","null","","null","null","null","null",null,null,null,null,null,null,null,""],["null","🟪11.40-15.35 Физика лаб. 2-11хх В303","null","null","null","null","null"],["null","","null","null","null","null","null",""],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","",null,null,null,null,null,null,"null"],["null","🟩11.40-13.15 Физика сем.2-11 В310","null","null","null","null","null"],["null","null","null","null","🟧14.00-15.35 Физика лек.2-11, 12, 12А А501","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"]]
+[
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        "🟪9.50-11.25  лаб. 1-41мх Б324",
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        "🟧11.40-13.15  лек. 1-41м Б310",
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        "🟪14.00-15.35  лаб. 1-41мхх Б324",
+        null,
+        null,
+        null
+    ],
+    [
+        "🟩15.50-17.25 Системный анализ в управлении сем. 3-41 Б310",
+        "🟩15.50-17.25 Системный анализ в управлении сем. 3-42хх, 42х Б310",
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        "⬜️11.40-13.15 Системный анализ в управлении к.раб.3-41х Б324",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        "🟧14.00-15.35 Системный анализ в управлении лек.3-41, 42хх, 42х Б310",
+        "⬜️14.00-15.35 Системный анализ в управлении к.раб.3-42х Б324",
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        "⬜️15.50-17.25 Системный анализ в управлении к.раб.3-42хх Б324",
+        "⬜️15.50-17.25 Системный анализ в управлении к.раб.3-41хх Б324",
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ]
+]

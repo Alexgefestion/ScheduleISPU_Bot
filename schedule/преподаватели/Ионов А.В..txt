@@ -1,1 +1,128 @@
-[["null","null","null","null","null","null","null"],["null","null","⬜️9.50-11.25 Теплогидравлические процессы в ядерных реакторах к.пр. 4-11хх В437","null","null","null","",null,null,null,null,null,null,"null"],["null","null","null","null","null","null","null"],["null","null","⬜️14.00-15.35 Теплогидравлические процессы в ядерных реакторах к.пр. 4-11х В437","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","🟧8.00-9.35 Теплогидравлические процессы в ядерных реакторах лек.4-11, 12 В444","null"],["null","null","null","null","null","⬜️9.50-11.25 Теплогидравлические процессы в ядерных реакторах к.пр.4-12 В444","",null,null,null,null,null,null,"null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"],["null","null","null","null","null","null","null"]]
+[
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        "🟪11.40-13.15 Химия лаб. 1-ТЭ-3хх В403",
+        "🟪11.40-13.15 Химия лаб. 1-ТЭ-1х В403",
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        "🟪14.00-15.35 Химия лаб. 1-ТЭ-4х В403",
+        "🟪14.00-15.35 Химия лаб. 1-ТЭ-4хх В403",
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        "🟪15.50-17.25 Химия лаб. 1-ТЭ-1хх В403",
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        "🟪17.40-19.15 Химия лаб. 1-ТЭ-3х В403",
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        "🟧14.00-15.35 Химия лек.1-ТЭ-3, ТЭ-4 Б318",
+        null,
+        "🟩14.00-15.35 Химия сем.1-ТЭ-3 В404",
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        "🟩15.50-17.25 Химия сем.1-ТЭ-4 В410",
+        null,
+        "🟩15.50-17.25 Химия сем.1-ТЭ-1 В404",
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ]
+]

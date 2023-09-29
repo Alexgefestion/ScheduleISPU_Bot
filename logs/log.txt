@@ -1,1 +1,357 @@
-start
+Wed Sep 27 2023 23:05:42 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "сегодня"
+}
+Wed Sep 27 2023 23:11:19 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "завтра"
+}
+Wed Sep 27 2023 23:23:39 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "сб"
+}
+Fri Sep 29 2023 23:14:17 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "/help"
+}
+Fri Sep 29 2023 23:15:35 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "/help"
+}
+Fri Sep 29 2023 23:16:48 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "/help"
+}
+Fri Sep 29 2023 23:18:16 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "/help"
+}
+Fri Sep 29 2023 23:18:40 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "/start"
+}
+{
+    "id": "7562872363301716520",
+    "from": {
+        "id": 1760868440,
+        "is_bot": false,
+        "first_name": "Александр",
+        "username": "Alexgefestion",
+        "language_code": "ru"
+    },
+    "message": {
+        "message_id": 7557,
+        "from": {
+            "id": 6524650278,
+            "is_bot": true,
+            "first_name": "ISPU Schedule",
+            "username": "ispuSchedule_bot"
+        },
+        "chat": {
+            "id": 1760868440,
+            "first_name": "Александр",
+            "username": "Alexgefestion",
+            "type": "private"
+        },
+        "date": 1696018722,
+        "text": "факультет",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 9,
+                "type": "bold"
+            }
+        ],
+        "reply_markup": {
+            "inline_keyboard": [
+                [
+                    {
+                        "text": "ИВТФ",
+                        "callback_data": "ИВТФ"
+                    }
+                ],
+                [
+                    {
+                        "text": "ИФФ",
+                        "callback_data": "ИФФ"
+                    }
+                ],
+                [
+                    {
+                        "text": "ТЭФ",
+                        "callback_data": "ТЭФ"
+                    }
+                ],
+                [
+                    {
+                        "text": "ФЭУ",
+                        "callback_data": "ФЭУ"
+                    }
+                ],
+                [
+                    {
+                        "text": "ЭМФ",
+                        "callback_data": "ЭМФ"
+                    }
+                ],
+                [
+                    {
+                        "text": "ЭЭФ",
+                        "callback_data": "ЭЭФ"
+                    }
+                ]
+            ]
+        }
+    },
+    "chat_instance": "7458486881836884987",
+    "data": "ТЭФ"
+}
+{
+    "id": "7562872362815400427",
+    "from": {
+        "id": 1760868440,
+        "is_bot": false,
+        "first_name": "Александр",
+        "username": "Alexgefestion",
+        "language_code": "ru"
+    },
+    "message": {
+        "message_id": 7558,
+        "from": {
+            "id": 6524650278,
+            "is_bot": true,
+            "first_name": "ISPU Schedule",
+            "username": "ispuSchedule_bot"
+        },
+        "chat": {
+            "id": 1760868440,
+            "first_name": "Александр",
+            "username": "Alexgefestion",
+            "type": "private"
+        },
+        "date": 1696018734,
+        "text": "курс",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 4,
+                "type": "bold"
+            }
+        ],
+        "reply_markup": {
+            "inline_keyboard": [
+                [
+                    {
+                        "text": "1",
+                        "callback_data": "ТЭФ/1"
+                    }
+                ],
+                [
+                    {
+                        "text": "2",
+                        "callback_data": "ТЭФ/2"
+                    }
+                ],
+                [
+                    {
+                        "text": "3",
+                        "callback_data": "ТЭФ/3"
+                    }
+                ],
+                [
+                    {
+                        "text": "4",
+                        "callback_data": "ТЭФ/4"
+                    }
+                ]
+            ]
+        }
+    },
+    "chat_instance": "7458486881836884987",
+    "data": "ТЭФ/2"
+}
+{
+    "id": "7562872366490988441",
+    "from": {
+        "id": 1760868440,
+        "is_bot": false,
+        "first_name": "Александр",
+        "username": "Alexgefestion",
+        "language_code": "ru"
+    },
+    "message": {
+        "message_id": 7559,
+        "from": {
+            "id": 6524650278,
+            "is_bot": true,
+            "first_name": "ISPU Schedule",
+            "username": "ispuSchedule_bot"
+        },
+        "chat": {
+            "id": 1760868440,
+            "first_name": "Александр",
+            "username": "Alexgefestion",
+            "type": "private"
+        },
+        "date": 1696018735,
+        "text": "группа",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 6,
+                "type": "bold"
+            }
+        ],
+        "reply_markup": {
+            "inline_keyboard": [
+                [
+                    {
+                        "text": "1 х",
+                        "callback_data": "ТЭФ/2/1 х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "1 хх",
+                        "callback_data": "ТЭФ/2/1 хх.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "10 х",
+                        "callback_data": "ТЭФ/2/10 х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "10м х",
+                        "callback_data": "ТЭФ/2/10м х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "1м х",
+                        "callback_data": "ТЭФ/2/1м х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "1м хх",
+                        "callback_data": "ТЭФ/2/1м хх.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "2 х",
+                        "callback_data": "ТЭФ/2/2 х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "3 х",
+                        "callback_data": "ТЭФ/2/3 х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "3 хх",
+                        "callback_data": "ТЭФ/2/3 хх.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "3А х",
+                        "callback_data": "ТЭФ/2/3А х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "4 х",
+                        "callback_data": "ТЭФ/2/4 х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "4м х",
+                        "callback_data": "ТЭФ/2/4м х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "7 х",
+                        "callback_data": "ТЭФ/2/7 х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "7 хх",
+                        "callback_data": "ТЭФ/2/7 хх.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "8 х",
+                        "callback_data": "ТЭФ/2/8 х.txt"
+                    }
+                ],
+                [
+                    {
+                        "text": "8 хх",
+                        "callback_data": "ТЭФ/2/8 хх.txt"
+                    }
+                ]
+            ]
+        }
+    },
+    "chat_instance": "7458486881836884987",
+    "data": "ТЭФ/2/10 х.txt"
+}
+Fri Sep 29 2023 23:22:28 GMT+0300 (Moscow Standard Time)
+{
+    "chat": {
+        "id": 1760868440,
+        "first_name": "Александр",
+        "username": "Alexgefestion"
+    },
+    "text": "/help"
+}
