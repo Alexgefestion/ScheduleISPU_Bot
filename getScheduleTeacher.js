@@ -100,7 +100,7 @@ class GetScheduleTeacher {
 				if(data[i][j]!= ''){
 					GetScheduleTeacher.formationSchedule.RawSheet[i-3][j-num-1] = colorSquare + startLess[i-3]+"-"+endLess[i-4+rowspan]+data[i][j];
 				}else{
-					GetScheduleTeacher.formationSchedule.RawSheet[i-3][j-num-1] = null;
+					GetScheduleTeacher.formationSchedule.RawSheet[i-3][j-num-1] = 'null';
 				}
 			}
 		}
