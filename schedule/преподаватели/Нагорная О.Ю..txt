@@ -1,128 +1,128 @@
 [
     [
         "🟧8.00-9.35 Основы трансформации теплоты лек. 3-13 Г207",
-        null,
-        null,
+        "null",
+        "null",
         "🟩8.00-9.35 Основы трансформации теплоты сем. 3-13 Г204",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
         "🟩9.50-11.25 Основы трансформации теплоты сем.3-13 А325в",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

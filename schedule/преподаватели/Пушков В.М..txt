@@ -1,131 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟪15.50-19.15 Основы микропроцессорной техники лаб. 3-8х В352",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-    ],
-    [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        ""
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
+    ],
+    [
+        "null",
         "🟧11.40-13.15 Основы микропроцессорной техники лек.3-8 В344",
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "null",
         "🟪14.00-17.25 Основы микропроцессорной техники лаб.3-8ххх В352",
-        null,
+        "null",
         "🟪14.00-17.25 Основы микропроцессорной техники лаб.3-8хх В352",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
+        "null",
         "",
-        ""
+        "null",
+        "",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        "",
-        null,
-        null,
-        "",
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "⬜️11.40-13.15 Тепловые и атомные электростанции к.пр. 4-2 Д303",
         "🟪11.40-13.15 Режимы работы ТЭС лаб. 1-43м Д202",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
         "🟧8.00-9.35 Технологическая часть ТЭС и АЭС лек.4-21 Д207",
-        null
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
         "🟩9.50-11.25 Технологическая часть ТЭС и АЭС сем.4-21 Д207",
-        null
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟧11.40-13.15 Режимы работы ТЭС лек.1-43м Д102",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "null",
         "🟪14.00-15.35 Режимы работы ТЭС лаб.1-43м Д202",
-        null,
+        "null",
         "🟩14.00-15.35 Режимы работы ТЭС сем.1-43м Д102",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "⬜️15.50-17.25 Тепловые и атомные электростанции к.пр.4-2 Д207",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

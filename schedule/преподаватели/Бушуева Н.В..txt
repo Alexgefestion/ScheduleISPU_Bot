@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟪15.50-17.25 Информатика лаб. 1-ТЭ-5ТБ В327",
-        null,
+        "null",
         "🟪15.50-17.25 Информатика лаб. 1-ТЭ-2хх В327",
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
         "🟪14.00-15.35 Информатика лаб.1-ТЭ-2х В327",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟪15.50-17.25 Информатика лаб.1-ТЭ-5ТБ В327",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

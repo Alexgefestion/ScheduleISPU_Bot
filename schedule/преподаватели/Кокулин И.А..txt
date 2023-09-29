@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
+        "null",
+        "null",
         "🟩15.50-17.25 Турбины ТЭС и АЭС сем. 3-2 Д207",
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
         "🟪9.50-11.25 Турбины ТЭС и АЭС лаб.3-2 Д202",
-        null
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
         "🟩15.50-17.25 ТЭ процессы и установки ЭС сем.3-43, 44 А405",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟩17.40-19.15 Турбины ТЭС и АЭС сем.3-2 Д207",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

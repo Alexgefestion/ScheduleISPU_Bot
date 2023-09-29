@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟧11.40-13.15 Проведение числ. и физ. эксп. в МЖГ лек. 2-10м В358",
         "🟧11.40-13.15 Паротурбинные установки лек. 3-10 Д311",
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟪14.00-15.35 Проведение числ. и физ. эксп. в МЖГ лаб. 2-10м В358",
         "🟧14.00-15.35 Турбоустановки ТЭС и АЭС лек. 3-3, 8 Д303",
-        null,
+        "null",
         "🟩14.00-15.35 Паротурбинные установки сем. 3-10 Д102",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟩15.50-17.25 Механика жидкости и газа сем. 2-10 В356",
         "🟪15.50-17.25 Механика жидкости и газа лаб. 2-10 А140",
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
         "🟧11.40-13.15 Котлы-утилизаторы ПГУ электростанций лек.1-1м Д102",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟩14.00-15.35 Механика жидкости и газа сем.2-10 В356",
-        null,
-        null,
+        "null",
+        "null",
         "🟧14.00-15.35 Теория течения в турбинных решетках лек.3-10 Д307",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟧15.50-17.25 Паротурбинные установки лек.3-10 В106",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟩17.40-19.15 Паротурбинные установки сем.3-10 В106",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

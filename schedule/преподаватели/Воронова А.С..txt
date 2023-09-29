@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟩9.50-11.25 Высшая математика сем. 2-ЭЭ-5 А436",
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟩9.50-11.25 Высшая математика сем. 2-ЭЭ-4 А431",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟧11.40-13.15 Высшая математика лек. 1-ЭЭ-4, ЭЭ-5, ЭЭ-В А501",
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟧11.40-13.15 Высшая математика лек. 1-ЭЭ-4, ЭЭ-5, ЭЭ-В А501",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟩14.00-15.35 Высшая математика сем. 1-ЭЭ-4 А435",
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟩14.00-15.35 Высшая математика сем. 1-ЭЭ-5 А432",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
         "🟩8.00-9.35 Высшая математика сем.2-ЭЭ-4 А436",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟩9.50-11.25 Высшая математика сем.2-ЭЭ-5 А436",
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟧9.50-11.25 Высшая математика лек.2-ЭЭ-4, ЭЭ-5, ЭЭ-В, ЭЭ-И А501",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟧11.40-13.15 Высшая математика лек.1-ЭЭ-4, ЭЭ-5, ЭЭ-В Б318",
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟩11.40-13.15 Высшая математика сем.1-ЭЭ-5 А436",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟩14.00-15.35 Высшая математика сем.1-ЭЭ-4 А432",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

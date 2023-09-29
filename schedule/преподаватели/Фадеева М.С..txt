@@ -13,11 +13,9 @@
         "null",
         "",
         "null",
-        "null",
         "",
         "null",
-        "",
-        ""
+        "null"
     ],
     [
         "null",
@@ -35,18 +33,16 @@
         "🟪14.00-17.25 Физика лаб. 1-ЭЭ-1хх В311",
         "null",
         "null",
-        "null",
-        ""
+        "null"
     ],
     [
         "🟩15.50-17.25 Физика сем. 1-ЭЭ-В В310",
         "null",
+        "null",
         "",
         "null",
         "null",
-        "null",
-        "null",
-        ""
+        "null"
     ],
     [
         "null",
@@ -80,11 +76,9 @@
         "null",
         "null",
         "null",
-        "null",
         "",
         "null",
-        "",
-        ""
+        "null"
     ],
     [
         "null",
@@ -102,18 +96,16 @@
         "null",
         "null",
         "null",
-        "null",
-        ""
+        "null"
     ],
     [
+        "null",
         "null",
         "",
         "null",
         "null",
         "null",
-        "null",
-        "null",
-        ""
+        "null"
     ],
     [
         "null",

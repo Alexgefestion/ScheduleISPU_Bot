@@ -1,128 +1,128 @@
 [
     [
         "🟪8.00-11.25с 25.09 Изоляция установок ВН и основы ее проектир. лаб. 4-25 А123",
-        null,
+        "null",
         "🟪8.00-11.25 Вероятн. и статист. задачи в ТВН лаб. 3-25 А127",
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "",
-        null,
+        "null",
         "",
-        null,
+        "null",
         "🟩9.50-11.25 Компьют. мониторинг ТС изоляции ВВ оборудования сем. 2-25м А127",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟩8.00-9.35 Компьют. мониторинг ТС изоляции ВВ оборудования сем.2-25м А127",
-        null,
+        "null",
         "🟪8.00-11.25 Вероятн. и статист. задачи в ТВН лаб.3-25В А127",
         "🟧8.00-9.35 Компьют. мониторинг ТС изоляции ВВ оборудования лек.2-25м А127",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟩9.50-11.25 Вероятн. и статист. задачи в ТВН сем.3-25В А122",
-        null,
+        "null",
         "",
         "🟩9.50-11.25 Компьют. мониторинг ТС изоляции ВВ оборудования сем.2-25м А127",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "null",
         "🟧11.40-13.15 Вероятн. и статист. задачи в ТВН лек.3-25, 25В А122",
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "null",
         "🟩14.00-15.35 Вероятн. и статист. задачи в ТВН сем.3-25 А122",
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

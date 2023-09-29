@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟧9.50-11.25 Газоснабжение лек. 3-13 Г204",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟧11.40-13.15 Инновационные теплогенерирующие установки лек. 1-4м Г209",
-        null,
-        null,
+        "null",
+        "null",
         "⬜️11.40-13.15 Газоснабжение к.раб. 3-13х Г209",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟩14.00-15.35 Газоснабжение сем. 3-13 Г207",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟩9.50-11.25 Газоснабжение сем.3-13 Г204",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟧11.40-13.15 Газоснабжение лек.3-13 Г204",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟩14.00-15.35 Инновационные теплогенерирующие установки сем.1-4м Г2",
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "⬜️14.00-15.35 Газоснабжение к.раб.3-13хх Г209",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
         "🟪15.50-17.25 Инновационные теплогенерирующие установки лаб.1-4м Г101",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟪9.50-11.25 Спецвопросы тепломассообмена лаб. 3-13хх А322а",
-        null,
+        "null",
         "🟩9.50-11.25 Высокотемп. теплотехнол. процессы и установки сем. 4-13 Г207",
-        null,
+        "null",
         "🟪9.50-11.25 Высокотемп. теплотехнол. процессы и установки лаб. 4-13хх А322а",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟧11.40-13.15 Высокотемп. теплотехнол. процессы и установки лек. 4-13 Г207",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟩14.00-15.35 Спецвопросы тепломассообмена сем. 3-13 Г204",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟪9.50-11.25 Высокотемп. теплотехнол. процессы и установки лаб.4-13х А322а",
         "🟧9.50-11.25 Высокотемп. теплотехнол. процессы и установки лек.4-13 А417",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟩11.40-13.15 Высокотемп. теплотехнол. процессы и установки сем.4-13 А208",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟧14.00-15.35 Спецвопросы тепломассообмена лек.3-13 Г204",
-        null,
-        null,
+        "null",
+        "null",
         "🟪14.00-15.35 Спецвопросы тепломассообмена лаб.3-13х А322а",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

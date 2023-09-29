@@ -1,128 +1,128 @@
 [
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟧9.50-11.25 Испытания и наладка турбинного оборудования лек. 2-1мх Д207",
         "⬜️9.50-11.25 Тепловые и атомные электростанции к.пр. 4-1х Д209",
         "🟩9.50-11.25 Тепловые и атомные электростанции сем. 3-1 Д209",
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "null",
         "🟧11.40-13.15 Тепловые и атомные электростанции лек. 3-1, 2 Д209",
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "⬜️15.50-17.25 Тепловые и атомные электростанции к.пр. 4-1хх Д106",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "null",
         "⬜️9.50-11.25 Тепловые и атомные электростанции к.пр.4-1хх Д207",
-        null,
+        "null",
         "⬜️9.50-11.25 Тепловые и атомные электростанции к.пр.4-1х Д207",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
+        "null",
+        "null",
+        "null",
         "🟩14.00-15.35 Тепловые и атомные электростанции сем.3-1 Д209",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]

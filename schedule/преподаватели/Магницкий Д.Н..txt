@@ -2,134 +2,127 @@
     [
         "🟪8.00-11.25 Строительство и монтаж АЭС лаб. 5-11х А322",
         "🟪8.00-11.25 Строительство и монтаж АЭС лаб. 5-11хх А322",
-        null,
+        "null",
         "🟪8.00-11.25 Теория переноса нейтронов лаб. 3-11х В442",
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
+        "",
+        "",
+        "null",
+        "",
         "🟧9.50-11.25 Строительство и монтаж АЭС лек. 5-ИФФ В435",
-        null,
-        null,
-        "",
-        "",
-        ""
+        "null",
+        "null"
     ],
     [
-        "",
-        null,
-        "",
+        "null",
         "🟪11.40-15.35 Теория переноса нейтронов лаб. 3-11хх В442",
-        null,
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
+    ],
+    [
+        "null",
         "",
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        ""
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        "",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-    ],
-    [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
         "🟪9.50-13.15 Строительство и монтаж АЭС лаб.5-12 А322",
-        null,
-        null,
+        "null",
+        "null",
         "🟪9.50-13.15 Теория переноса нейтронов лаб.3-12хх В442",
         "🟪9.50-11.25 Радиационная безопасность лаб.4-15 В442",
-        null,
-        null
+        "null",
+        "null"
     ],
     [
+        "",
         "🟪11.40-15.35 Теория переноса нейтронов лаб.3-12х В442",
-        null,
-        null,
-        null,
-        null,
+        "null",
         "",
-        ""
+        "null",
+        "null",
+        "null"
     ],
     [
-        "",
         "🟪14.00-15.35 Радиационная безопасность лаб.4-3А В442",
-        null,
-        null,
         "",
-        null,
-        null,
-        null,
-        ""
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        "",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ],
     [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null",
+        "null"
     ]
 ]
