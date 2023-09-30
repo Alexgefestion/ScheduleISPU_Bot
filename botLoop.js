@@ -21,14 +21,15 @@ let date;
 let hours;
 let minutes;
 let dayNum;
+let week;
 let weekNum;
 
 Date.prototype.getWeek = function() {
   let date = new Date(this.getTime());
   date.setHours(0, 0, 0, 0);
   date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
-  let week1 = new Date(date.getFullYear(), 0, 4);
-  return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+  week = new Date(date.getFullYear(), 0, 4);
+  return 1 + Math.round(((date.getTime() - week.getTime()) / 86400000 - 3 + (week.getDay() + 6) % 7) / 7);
 }
 
 function getData(){
@@ -222,7 +223,7 @@ bot.setMyCommands([
 
 
 bot.on('message', async (msg) => {
-	fs.appendFileSync('logs/log.txt', new Date()  + '\n' + JSON.stringify(msg, ['chat','id','first_name','last_name','username','text'], 4) + '\n');
+	fs.appendFileSync(`logs/w${week}d${dayNum}.txt`, new Date()  + '\n' + JSON.stringify(msg, ['chat','id','first_name','last_name','username','text'], 4) + '\n');
 	const chatId = msg.chat.id;
 	const msgText = msg.text;
 
@@ -339,7 +340,7 @@ bot.on('message', async (msg) => {
 
 
 bot.on('callback_query', async (msg) => {
-	fs.appendFileSync('logs/log.txt', new Date()  + '\n' + JSON.stringify(msg, ['message','chat','id','first_name','last_name','username','date','data'], 4) + '\n\r');
+	fs.appendFileSync(`logs/w${week}d${dayNum}.txt`, new Date()  + '\n' + JSON.stringify(msg, ['message','chat','id','first_name','last_name','username','date','data'], 4) + '\n\r');
 	const messageId = msg.message.message_id;
 	const chatId = msg.message.chat.id;
 	const msgText = msg.message.text;
