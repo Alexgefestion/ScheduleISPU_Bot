@@ -1,128 +1,128 @@
 [
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
+        "",
+        "",
         "🟪15.50-17.25 Прикладная механика (включая ДПМ) лаб.2-3А А107",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 ]

@@ -1,128 +1,128 @@
 [
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
         "🟪15.50-17.25 Экология лаб. 3-2 В425",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ],
     [
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null",
-        "null"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
     ]
 ]

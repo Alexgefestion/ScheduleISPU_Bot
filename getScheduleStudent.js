@@ -24,19 +24,19 @@ class GetScheduleStudent {
 						setTimeout(GetScheduleStudent.GetSchedule, 100, body);
 						if(numGroup<Group.length-1){
 							numGroup++;
-							setTimeout(bypass, 500);
+							setTimeout(bypass, 1000);
 						}else{
 							numGroup = 0;
 
 							if(numCourse<Course.length-1){
 								numCourse++;
-								setTimeout(bypass, 500);
+								setTimeout(bypass, 1000);
 							}else{
 								numCourse = 0;
 
 								if(numDivision<Division.length-1){
 									numDivision++;
-									setTimeout(bypass, 500);
+									setTimeout(bypass, 1000);
 								}else{
 									numDivision = 0;
 									return;
@@ -49,7 +49,12 @@ class GetScheduleStudent {
 		}
 		bypass();
 	}
-	// GetSchedule(body);
+	static tensorShift(_Array, _i, _j){
+		for(let j =  _Array[_i].length; j > _j; j--){
+			_Array[_i][j] = _Array[_i][j-1];
+		}
+		_Array[_i][_j] = 0
+	}
 	static async GetSchedule(bodyArg) {
 		let response = await fetch(requestURL, {
 	  		method: 'POST',
@@ -72,7 +77,7 @@ class GetScheduleStudent {
 
 	}
 	static formationSchedule(data) {
-		this.formationSchedule.Offset = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+		// this.formationSchedule.Offset = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 		this.formationSchedule.Rowspan = [[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0],];
 		this.formationSchedule.RawSheet = [['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','']];
 		this.formationSchedule.CompliteSheet = [['','','','','','','Выходной'],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','Выходной'],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','',''],['','','','','','','']];
@@ -120,22 +125,26 @@ class GetScheduleStudent {
 
 				if(rowspan > 1){
 					for(let long = 1; long < rowspan; long++){
-						GetScheduleStudent.formationSchedule.Rowspan[i-3][j-num-1] = 1;
+						GetScheduleStudent.formationSchedule.Rowspan[i-3+long][j-num-1] = 1;
 					}
 				}
 				data[i][j] = data[i][j].split('>')[1].split('<')[0];
 				if(data[i][j]!= ''){
 					GetScheduleStudent.formationSchedule.RawSheet[i-3][j-num-1] = colorSquare + startLess[i-3]+"-"+endLess[i-4+rowspan]+data[i][j];
 				}else{
-					GetScheduleStudent.formationSchedule.RawSheet[i-3][j-num-1] = 'null';
+					GetScheduleStudent.formationSchedule.RawSheet[i-3][j-num-1] = '';
 				}
 			}
 		}
 		function createCompliteSheet(RawSheet){
 			for(let j = 0; j < 7; j++){
 				for(let i = 0; i < 14; i++){
-					GetScheduleStudent.formationSchedule.CompliteSheet[i][j+GetScheduleStudent.formationSchedule.Offset[i]] = RawSheet[i][j];
-					GetScheduleStudent.formationSchedule.Offset[i+1] += GetScheduleStudent.formationSchedule.Rowspan[i][j];
+					if(GetScheduleStudent.formationSchedule.Rowspan[i][j] != 1){
+						GetScheduleStudent.formationSchedule.CompliteSheet[i][j] = RawSheet[i][j];
+					}else{
+						GetScheduleStudent.tensorShift(RawSheet, i,j);
+						GetScheduleStudent.tensorShift(GetScheduleStudent.formationSchedule.Rowspan, i+1,j)
+					}
 				}
 			}
 			fs.writeFileSync(`schedule/${Name[0]}/${Name[1]}/${Name[2]}/${Name[3]} ${Name[4]}.txt`, JSON.stringify(GetScheduleStudent.formationSchedule.CompliteSheet, null, 4));

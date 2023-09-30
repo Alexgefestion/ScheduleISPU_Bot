@@ -94,12 +94,12 @@ function readFsShedule(dayNumArg, weekNumArg, TextArg, chatId){
 					compliteShedule2 = '<b> (Текущая) </b>\n\r\n\r';
 				}
 				for(let i = 0; i<7; i++){
-					if(shedule[i][dayNumArg]!= 'null'){
+					if(shedule[i][dayNumArg]!= ''){
 						compliteShedule1 += shedule[i][dayNumArg] + '\n\r';
 					}
 				}
 				for(let i = 7; i<14; i++){
-					if(shedule[i][dayNumArg]!= 'null'){
+					if(shedule[i][dayNumArg]!= ''){
 						compliteShedule2 += shedule[i][dayNumArg] + '\n\r';
 					}
 				}
@@ -108,7 +108,7 @@ function readFsShedule(dayNumArg, weekNumArg, TextArg, chatId){
 			}else{
 				let compliteShedule = '';
 				for(let i = 7*(weekNumArg-1); i<7*weekNumArg; i++){
-					if(shedule[i][dayNumArg]!= 'null'){
+					if(shedule[i][dayNumArg]!= ''){
 						compliteShedule += shedule[i][dayNumArg] + '\n\r';
 					}
 				}
@@ -150,12 +150,12 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 			compliteShedule2 = '<b> (Текущая) </b>\n\r\n\r';
 		}
 		for(let i = 0; i<7; i++){
-			if(shedule[i][dayNumArg]!= 'null'){
+			if(shedule[i][dayNumArg]!= ''){
 				compliteShedule1 += shedule[i][dayNumArg] + '\n\r';
 			}
 		}
 		for(let i = 7; i<14; i++){
-			if(shedule[i][dayNumArg]!= 'null'){
+			if(shedule[i][dayNumArg]!= ''){
 				compliteShedule2 += shedule[i][dayNumArg] + '\n\r';
 			}
 		}
@@ -164,7 +164,7 @@ function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
 	}else{
 		let compliteShedule = '';
 		for(let i = 7*(weekNumArg-1); i<7*weekNumArg; i++){
-			if(shedule[i][dayNumArg]!= 'null'){
+			if(shedule[i][dayNumArg]!= ''){
 				compliteShedule += shedule[i][dayNumArg] + '\n\r';
 			}
 		}
