@@ -20,7 +20,7 @@ class GetScheduleTeacher {
 			console.log(nameTeacher[numberTeacher], numberTeacher, '/378');
 			body = rawBody + numTeacher[numberTeacher];
 			setTimeout(GetScheduleTeacher.getSchedule, 100, body);
-			if(numberTeacher < nameTeacher.length){
+			if(numberTeacher < nameTeacher.length-1){
 				setTimeout(bypass, 1000, numberTeacher+1);
 			}
 		}

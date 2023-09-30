@@ -339,7 +339,7 @@ bot.on('message', async (msg) => {
 
 
 bot.on('callback_query', async (msg) => {
-	fs.appendFileSync('logs/log.txt', JSON.stringify(msg, new Date()  + '\n' + ['message','chat','id','first_name','last_name','username','date','data'], 4) + '\n\r');
+	fs.appendFileSync('logs/log.txt', new Date()  + '\n' + JSON.stringify(msg, ['message','chat','id','first_name','last_name','username','date','data'], 4) + '\n\r');
 	const messageId = msg.message.message_id;
 	const chatId = msg.message.chat.id;
 	const msgText = msg.message.text;
