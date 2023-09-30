@@ -28,8 +28,8 @@ Date.prototype.getWeek = function() {
   let date = new Date(this.getTime());
   date.setHours(0, 0, 0, 0);
   date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
-  week = new Date(date.getFullYear(), 0, 4);
-  return 1 + Math.round(((date.getTime() - week.getTime()) / 86400000 - 3 + (week.getDay() + 6) % 7) / 7);
+  let week1 = new Date(date.getFullYear(), 0, 4);
+  return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
 }
 
 function getData(){
@@ -37,6 +37,7 @@ function getData(){
 	hours = date.getHours();
 	minutes = date.getMinutes();
 	dayNum = date.getDay()-1;
+	week = date.getWeek();
 	if(date.getWeek() % 2 == 0){weekNum = 2}else{weekNum = 1}
 
 
