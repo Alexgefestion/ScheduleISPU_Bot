@@ -13,7 +13,7 @@ class GetScheduleTeacher {
 	constructor(){
 
 	}
-	directiryBypass() {
+	directoryBypass() {
 		let body;
 		function bypass(Teacher){
 			numberTeacher = Teacher;

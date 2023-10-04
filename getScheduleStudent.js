@@ -10,7 +10,7 @@ class GetScheduleStudent {
 	constructor(){
 
 	}
-	directiryBypass() {
+	directoryBypass() {
 		let numDivision = 0;
 		let numCourse = 0;
 		let numGroup = 0;

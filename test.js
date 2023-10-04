@@ -1,7 +1,10 @@
 const GetScheduleStudent = require('./getScheduleStudent.js');
-const GetScheduleTeacher = require('./getScheduleTeacher');
+const GetScheduleTeacher = require('./getScheduleTeacher.js');
+const GetScheduleAuditorium = require('./getScheduleAuditorium.js');
 
 const ScheduleTeacher = new GetScheduleTeacher();
 const ScheduleStudent = new GetScheduleStudent();
+const ScheduleAuditorium = new GetScheduleAuditorium();
 
-ScheduleTeacher.directiryBypass();
+ScheduleAuditorium.directoryBypass();
+// console.log(ScheduleAuditorium.directoryBypass)

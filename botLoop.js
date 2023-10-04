@@ -1,5 +1,5 @@
 const GetScheduleStudent = require('./getScheduleStudent.js');
-const GetScheduleTeacher = require('./getScheduleTeacher');
+const GetScheduleTeacher = require('./getScheduleTeacher.js');
 
 const ScheduleTeacher = new GetScheduleTeacher();
 const ScheduleStudent = new GetScheduleStudent();
@@ -46,10 +46,10 @@ function getData(){
 		notification();
 	}
 	if(dayNum == -1 && hours == 20 && minutes == 0){
-		ScheduleTeacher.directiryBypass();
+		ScheduleTeacher.directoryBypass();
 	}
 	if(dayNum == -1 && hours == 22 && minutes == 30){
-		ScheduleStudent.directiryBypass();
+		ScheduleStudent.directoryBypass();
 	}
 
 }
@@ -224,7 +224,7 @@ bot.setMyCommands([
 
 
 bot.on('message', async (msg) => {
-	fs.appendFileSync(`logs/w${week}d${dayNum}.txt`, new Date()  + '\n' + JSON.stringify(msg, ['chat','id','first_name','last_name','username','text'], 4) + '\n');
+	fs.appendFileSync(`logs/w${week}d${dayNum}.log`, new Date()  + '\n' + JSON.stringify(msg, ['chat','id','first_name','last_name','username','text'], 4) + '\n');
 	const chatId = msg.chat.id;
 	const msgText = msg.text;
 
@@ -341,7 +341,7 @@ bot.on('message', async (msg) => {
 
 
 bot.on('callback_query', async (msg) => {
-	fs.appendFileSync(`logs/w${week}d${dayNum}.txt`, new Date()  + '\n' + JSON.stringify(msg, ['message','chat','id','first_name','last_name','username','date','data'], 4) + '\n\r');
+	fs.appendFileSync(`logs/w${week}d${dayNum}.log`, new Date()  + '\n' + JSON.stringify(msg, ['message','chat','id','first_name','last_name','username','date','data'], 4) + '\n\r');
 	const messageId = msg.message.message_id;
 	const chatId = msg.message.chat.id;
 	const msgText = msg.message.text;
