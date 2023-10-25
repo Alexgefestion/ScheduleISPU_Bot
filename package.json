@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "node-telegram-bot-api": "^0.63.0"
+    "node-vk-bot-api": "^3.5.0"
   }
 }
