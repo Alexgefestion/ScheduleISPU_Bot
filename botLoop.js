@@ -142,7 +142,7 @@ vkBot.event('message_new', async (ctx) => {
       let msgText = ctx.message.text;
       let chatId = ctx.message.from_id;
 
-      if(msgText === '/start'){
+      if(msgText === '/start' || msgText === 'Начать'){
          // await bot.sendMessage(chatId, help, {reply_markup: {keyboard: [['/info']],resize_keyboard: true},parse_mode: 'html'});
         return createKeyboardFS('', chatId, 'Выберите факультет', 'факультет');
        }
