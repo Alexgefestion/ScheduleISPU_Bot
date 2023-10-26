@@ -191,7 +191,16 @@ function notification(){
 					compliteShedule += shedule[i][dayNum] + '\n\r';
 				}
 			}
-			bot.sendMessage(Person[i][0], text+'<b>'+dayOnWeek[dayNum]+', '+weekEvenOdd[weekNum-1]+' '+'</b>\n\r\n\r'+compliteShedule, {parse_mode: 'html'});
+			bot.sendMessage(Person[i][0], text+'<b>'+dayOnWeek[dayNum]+', '+weekEvenOdd[weekNum-1]+' '+'</b>\n\r\n\r'+compliteShedule, {
+				reply_markup: {
+				    keyboard: [
+				    		["сегодня", "завтра"],
+				    		["пн", "вт", "ср", "чт", "пт", "сб"]
+				    	],
+				    resize_keyboard: true,
+				    },
+				    parse_mode: 'html'
+				});
 		}
 	}
 }
@@ -324,7 +333,7 @@ bot.on('message', async (msg) => {
 		parse_mode: 'html'
 	}
 	for(let i = 0; i < teacherName.length; i++){
-		if(teacherName[i].includes(msgText)){
+		if(teacherName[i].includes(msgText.charAt(0).toUpperCase() + msgText.slice(1))){
 			teacherKeyboard.reply_markup.inline_keyboard.push([{text: teacherName[i], callback_data: teacherName[i]}]);
 		}
 	}
