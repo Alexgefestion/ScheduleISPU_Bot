@@ -122,8 +122,8 @@ function readFsShedule(dayNumArg, weekNumArg, TextArg, chatId){
 	}
 }
 
-function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, name, chatId){
-	let name = name.charAt(0).toUpperCase() + name.slice(1);
+function readFsSheduleTeacher(dayNumArg, weekNumArg, TextArg, nameArg, chatId){
+	let name = nameArg.charAt(0).toUpperCase() + nameArg.slice(1);
 
 	let Keyboard = {
 		reply_markup: {
