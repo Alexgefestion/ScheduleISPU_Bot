@@ -133,7 +133,22 @@ function readFsShedule(dayNumArg, weekNumArg, TextArg, chatId){
   }
 }
 
-
+function notification(){
+  for(let i = 0; i < VkPerson.length; i++){
+    if(VkPerson[i][2] == 1){
+      // await readFsShedule(dayNum, weekNum, '', Person[i][0]);
+      let text = 'Доброе утро, энергет! \n\r\n\rРасписание на сегодня \n\r'
+      let shedule = JSON.parse(fs.readFileSync(`schedule/постоянное/${VkPerson[i][1]}`, { encoding: 'UTF8', flag: 'r+' }));
+      let compliteShedule = '';
+      for(let i = 7*(weekNum-1); i<7*weekNum; i++){
+        if(shedule[i][dayNum]!= ''){
+          compliteShedule += shedule[i][dayNum] + '\n\r';
+        }
+      }
+      vkBot.sendMessage(VkPerson[i][0], text+dayOnWeek[dayNum]+', '+weekEvenOdd[weekNum-1]+' '+'\n\r\n\r'+compliteShedule);
+    }
+  }
+}
 
 vkBot.event('message_new', async (ctx) => {
   console.log(ctx)
@@ -345,22 +360,7 @@ vkBot.event('message_event', async (ctx) => {
 
 // }
 
-// function notification(){
-// 	for(let i = 0; i < Person.length; i++){
-// 		if(Person[i][2] == 1){
-// 			// await readFsShedule(dayNum, weekNum, '', Person[i][0]);
-// 			let text = 'Доброе утро, энергет! \n\r\n\rРасписание на сегодня \n\r'
-// 			let shedule = JSON.parse(fs.readFileSync(`schedule/постоянное/${Person[i][1]}`, { encoding: 'UTF8', flag: 'r+' }));
-// 			let compliteShedule = '';
-// 			for(let i = 7*(weekNum-1); i<7*weekNum; i++){
-// 				if(shedule[i][dayNum]!= 'null'){
-// 					compliteShedule += shedule[i][dayNum] + '\n\r';
-// 				}
-// 			}
-// 			bot.sendMessage(Person[i][0], text+'<b>'+dayOnWeek[dayNum]+', '+weekEvenOdd[weekNum-1]+' '+'</b>\n\r\n\r'+compliteShedule, {parse_mode: 'html'});
-// 		}
-// 	}
-// }
+
 
 // function adminCommand(){
 // 	bot.sendMessage(1760868440,	'action', {
