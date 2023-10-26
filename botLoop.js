@@ -38,24 +38,24 @@ Date.prototype.getWeek = function() {
 }
 
 function getData(){
- date = new Date();
- hours = date.getHours();
- minutes = date.getMinutes();
- dayNum = date.getDay()-1;
- week = date.getWeek();
- if(date.getWeek() % 2 == 0){weekNum = 2}else{weekNum = 1}
+  date = new Date();
+  hours = date.getHours();
+  minutes = date.getMinutes();
+  dayNum = date.getDay()-1;
+  week = date.getWeek();
+  if(date.getWeek() % 2 == 0){weekNum = 2}else{weekNum = 1}
 
 
  //time event
- if(dayNum != -1 && hours == 7 && minutes == 30){
-   notification();
- }
- if(dayNum == -1 && hours == 20 && minutes == 0){
-   ScheduleTeacher.directoryBypass();
- }
- if(dayNum == -1 && hours == 22 && minutes == 30){
-   ScheduleStudent.directoryBypass();
- }
+  if(dayNum != -1 && hours == 7 && minutes == 30){
+    notification();
+  }
+  if(dayNum == -1 && hours == 20 && minutes == 0){
+    ScheduleTeacher.directoryBypass();
+  }
+  if(dayNum == -1 && hours == 22 && minutes == 30){
+    ScheduleStudent.directoryBypass();
+  }
 
 }
 
