@@ -235,10 +235,10 @@ bot.setMyCommands([
 
 
 bot.on('message', async (msg) => {
+	const chatId = msg.chat.id;
+	const msgText = msg.text;
 	if(msgText){
 		fs.appendFileSync(`logs/w${week}d${dayNum}.log`, new Date()  + '\n' + JSON.stringify(msg, ['chat','id','first_name','last_name','username','text'], 4) + '\n');
-		const chatId = msg.chat.id;
-		const msgText = msg.text;
 
 
 		let info = 'Внимание! Бот находится в бета релизе, в случае неполадок напишите @alexgefestion. '
@@ -455,12 +455,6 @@ bot.on('callback_query', async (msg) => {
 	if(data === 'person'){
 		await bot.sendMessage(1760868440, Person.toString())
 		return;
-	}
-	if(data === 'logs'){
-		bot.sendMessage(1760868440, fs.readFileSync('logs/log.txt', { encoding: 'UTF8', flag: 'r+' }))
-	}
-	if(data === 'clearlogs'){
-		fs.writeFileSync('logs/log.txt', 'start' )
 	}
 
 
