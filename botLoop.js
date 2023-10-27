@@ -317,11 +317,11 @@ bot.on('message', async (msg) => {
 		return readFsShedule(5, 0, '(Текущая)',  chatId);
 	}
 	//поиск аудитории
-	if(msgText.length < 5){
-		if(msgText[0] === 'А' || msgText[0] === 'а' || msgText[0] === 'Б' || msgText[0] === 'б' || msgText[0] === 'С' || msgText[0] === 'с'){
+	// if(msgText.length < 5){
+	// 	if(msgText[0] === 'А' || msgText[0] === 'а' || msgText[0] === 'Б' || msgText[0] === 'б' || msgText[0] === 'С' || msgText[0] === 'с'){
 
-		}
-	}
+	// 	}
+	// }
 
 
 
@@ -332,8 +332,9 @@ bot.on('message', async (msg) => {
 		},
 		parse_mode: 'html'
 	}
+	let foundName = msgText.charAt(0).toUpperCase() + msgText.slice(1);
 	for(let i = 0; i < teacherName.length; i++){
-		if(teacherName[i].includes(msgText.charAt(0).toUpperCase() + msgText.slice(1))){
+		if(teacherName[i].includes(foundName)){
 			teacherKeyboard.reply_markup.inline_keyboard.push([{text: teacherName[i], callback_data: teacherName[i]}]);
 		}
 	}
@@ -391,7 +392,7 @@ bot.on('callback_query', async (msg) => {
 				}
 			}
 		}
-		fs.writeFileSync('person.json', JSON.stringify(Person, null, 4));
+		fs.writeFileSync('person.json', JSON.stringify(Person));
 		return;
 	}
 
