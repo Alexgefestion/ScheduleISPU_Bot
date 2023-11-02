@@ -235,121 +235,122 @@ bot.setMyCommands([
 
 
 bot.on('message', async (msg) => {
-	const chatId = msg.chat.id;
-	const msgText = msg.text;
-	if(msgText){
-		fs.appendFileSync(`logs/w${week}d${dayNum}.log`, new Date()  + '\n' + JSON.stringify(msg, ['chat','id','first_name','last_name','username','text'], 4) + '\n');
+	try {
+		const chatId = msg.chat.id;
+		const msgText = msg.text;
+		if(msgText){
+			fs.appendFileSync(`logs/w${week}d${dayNum}.log`, new Date()  + '\n' + JSON.stringify(msg, ['chat','id','first_name','last_name','username','text'], 4) + '\n');
 
 
-		let info = 'Внимание! Бот находится в бета релизе, в случае неполадок напишите @alexgefestion. '
-		let help = '\n●<b>Команды:</b>\n    • /choose - выберите свою группу\n    выбранная вами группа будет запомнена.\n\n    • /notification - включает/отключает автоматическую отправку раписания на текущий день (отправка происходит в <b>7:30</b>)\n\n●<b>Поиск:</b>\n    • Поиск расписания преподавателей осуществлятся отправкой в чат фамилии преподавателя или её части.\n        <i>"Ледуховский"</i> или <i>"Лед"</i>\n\n    •(в разработке) Поиск расписания занятий по аудитории осуществлятся отправкой в чат номера аудитории.\n        <i>"Б029"</i>';
+			let info = 'Внимание! Бот находится в бета релизе, в случае неполадок напишите @alexgefestion. '
+			let help = '\n●<b>Команды:</b>\n    • /choose - выберите свою группу\n    выбранная вами группа будет запомнена.\n\n    • /notification - включает/отключает автоматическую отправку раписания на текущий день (отправка происходит в <b>7:30</b>)\n\n●<b>Поиск:</b>\n    • Поиск расписания преподавателей осуществлятся отправкой в чат фамилии преподавателя или её части.\n        <i>"Ледуховский"</i> или <i>"Лед"</i>\n\n    •(в разработке) Поиск расписания занятий по аудитории осуществлятся отправкой в чат номера аудитории.\n        <i>"Б029"</i>';
 
-		//commands
-		if(msgText === '/help'){
-			return bot.sendMessage(chatId, help,{parse_mode: 'html'});
-		}
-		if(msgText === '/info'){
-			if(chatId === 1760868440){
-				adminCommand();
+			//commands
+			if(msgText === '/help'){
+				return bot.sendMessage(chatId, help,{parse_mode: 'html'});
 			}
-			return bot.sendMessage(chatId, info);
-		}
-		if(msgText === '/start'){
-			await bot.sendMessage(chatId, help, {reply_markup: {keyboard: [['/info']],resize_keyboard: true},parse_mode: 'html'});
-			return createKeyboardFS('', (arg1, arg2, divisionList)=>{bot.sendMessage(arg1, arg2, divisionList)}, chatId, '<b>факультет</b>');
-		}
+			if(msgText === '/info'){
+				if(chatId === 1760868440){
+					adminCommand();
+				}
+				return bot.sendMessage(chatId, info);
+			}
+			if(msgText === '/start'){
+				await bot.sendMessage(chatId, help, {reply_markup: {keyboard: [['/info']],resize_keyboard: true},parse_mode: 'html'});
+				return createKeyboardFS('', (arg1, arg2, divisionList)=>{bot.sendMessage(arg1, arg2, divisionList)}, chatId, '<b>факультет</b>');
+			}
 
-		if(msgText === '/choose'){
-			await bot.sendMessage(chatId, "Выберите группу", {reply_markup: {keyboard: [['/info']],resize_keyboard: true}});
-			return createKeyboardFS('', (arg1, arg2, divisionList)=>{bot.sendMessage(arg1, arg2, divisionList)}, chatId, '<b>факультет</b>');
-		}
+			if(msgText === '/choose'){
+				await bot.sendMessage(chatId, "Выберите группу", {reply_markup: {keyboard: [['/info']],resize_keyboard: true}});
+				return createKeyboardFS('', (arg1, arg2, divisionList)=>{bot.sendMessage(arg1, arg2, divisionList)}, chatId, '<b>факультет</b>');
+			}
 
-		if(msgText === '/notification'){
-			for(let i = 0; i < Person.length; i++){
-				if(Person[i][0] == chatId){
-					if(Person[i][2] == 1){
-						Person[i][2] = 0;
-						bot.sendMessage(chatId, 'Ежедневная рассылка расписания <b>отключена</b>',{parse_mode: 'html'});
-					}else{
-						Person[i][2] = 1;
-						bot.sendMessage(chatId, 'Ежедневная рассылка расписания <b>включена</b>',{parse_mode: 'html'});
+			if(msgText === '/notification'){
+				for(let i = 0; i < Person.length; i++){
+					if(Person[i][0] == chatId){
+						if(Person[i][2] == 1){
+							Person[i][2] = 0;
+							bot.sendMessage(chatId, 'Ежедневная рассылка расписания <b>отключена</b>',{parse_mode: 'html'});
+						}else{
+							Person[i][2] = 1;
+							bot.sendMessage(chatId, 'Ежедневная рассылка расписания <b>включена</b>',{parse_mode: 'html'});
+						}
+						fs.writeFileSync('person.json', JSON.stringify(Person));
 					}
-					fs.writeFileSync('person.json', JSON.stringify(Person));
 				}
+				return;
 			}
-			return;
-		}
 
-		//text commands
-		if(msgText === 'сегодня'){
-			if(dayNum == -1){
-				return readFsShedule(6, weekNum, '', chatId);
-			}else{
-				return readFsShedule(dayNum, weekNum, '', chatId);
-			}
-		}
-		if(msgText === 'завтра'){
-			if(dayNum == -1){
-				if(weekNum == 1){
-					return readFsShedule(dayNum+1, weekNum+1, '', chatId);
+			//text commands
+			if(msgText === 'сегодня'){
+				if(dayNum == -1){
+					return readFsShedule(6, weekNum, '', chatId);
 				}else{
-					return readFsShedule(dayNum+1, weekNum-1, '', chatId);
+					return readFsShedule(dayNum, weekNum, '', chatId);
 				}
-			}else{
-				return readFsShedule(dayNum+1, weekNum, '', chatId);
 			}
-		}
-		if(msgText === 'пн'){
-			return readFsShedule(0, 0, '(Текущая)',  chatId);
-		}
-		if(msgText === 'вт'){
-			return readFsShedule(1, 0, '(Текущая)',  chatId);
-		}
-		if(msgText === 'ср'){
-			return readFsShedule(2, 0, '(Текущая)',  chatId);
-		}
-		if(msgText === 'чт'){
-			return readFsShedule(3, 0, '(Текущая)',  chatId);
-		}
-		if(msgText === 'пт'){
-			return readFsShedule(4, 0, '(Текущая)',  chatId);
-		}
-		if(msgText === 'сб'){
-			return readFsShedule(5, 0, '(Текущая)',  chatId);
-		}
-
-
-		//поиск аудитории
-		if(msgText.length < 5){
-			if(msgText[0] === 'А' || msgText[0] === 'а' || msgText[0] === 'Б' || msgText[0] === 'б' || msgText[0] === 'С' || msgText[0] === 'с'){
-
+			if(msgText === 'завтра'){
+				if(dayNum == -1){
+					if(weekNum == 1){
+						return readFsShedule(dayNum+1, weekNum+1, '', chatId);
+					}else{
+						return readFsShedule(dayNum+1, weekNum-1, '', chatId);
+					}
+				}else{
+					return readFsShedule(dayNum+1, weekNum, '', chatId);
+				}
 			}
-		}
-
-
-
-		//поиск преподавателя
-		let teacherKeyboard = {
-			reply_markup: {
-				inline_keyboard: []
-			},
-			parse_mode: 'html'
-		}
-		let foundName = msgText.charAt(0).toUpperCase() + msgText.slice(1);
-		for(let i = 0; i < teacherName.length; i++){
-			if(teacherName[i].includes(foundName)){
-				teacherKeyboard.reply_markup.inline_keyboard.push([{text: teacherName[i], callback_data: teacherName[i]}]);
+			if(msgText === 'пн'){
+				return readFsShedule(0, 0, '(Текущая)',  chatId);
 			}
+			if(msgText === 'вт'){
+				return readFsShedule(1, 0, '(Текущая)',  chatId);
+			}
+			if(msgText === 'ср'){
+				return readFsShedule(2, 0, '(Текущая)',  chatId);
+			}
+			if(msgText === 'чт'){
+				return readFsShedule(3, 0, '(Текущая)',  chatId);
+			}
+			if(msgText === 'пт'){
+				return readFsShedule(4, 0, '(Текущая)',  chatId);
+			}
+			if(msgText === 'сб'){
+				return readFsShedule(5, 0, '(Текущая)',  chatId);
+			}
+
+
+			//поиск аудитории
+			if(msgText.length < 5){
+				if(msgText[0] === 'А' || msgText[0] === 'а' || msgText[0] === 'Б' || msgText[0] === 'б' || msgText[0] === 'С' || msgText[0] === 'с'){
+
+				}
+			}
+
+
+
+			//поиск преподавателя
+			let teacherKeyboard = {
+				reply_markup: {
+					inline_keyboard: []
+				},
+				parse_mode: 'html'
+			}
+			let foundName = msgText.charAt(0).toUpperCase() + msgText.slice(1);
+			for(let i = 0; i < teacherName.length; i++){
+				if(teacherName[i].includes(foundName)){
+					teacherKeyboard.reply_markup.inline_keyboard.push([{text: teacherName[i], callback_data: teacherName[i]}]);
+				}
+			}
+			if(teacherKeyboard.reply_markup.inline_keyboard.length != 0){
+				return bot.sendMessage(chatId, '<b>Совпадение имени:</b>', teacherKeyboard);
+			}
+			bot.sendMessage(chatId, "Ничего не найдено");
 		}
-		if(teacherKeyboard.reply_markup.inline_keyboard.length != 0){
-			return bot.sendMessage(chatId, '<b>Совпадение имени:</b>', teacherKeyboard);
-		}
-		
 
-		bot.sendMessage(chatId, "Ничего не найдено");
-
-
-	}
+	}catch(err){
+    console.error(err);
+  }	
 });
 
 
