@@ -21,7 +21,7 @@ class GetScheduleTeacher {
 			body = rawBody + numTeacher[numberTeacher];
 			setTimeout(GetScheduleTeacher.getSchedule, 100, body);
 			if(numberTeacher < nameTeacher.length-1){
-				setTimeout(bypass, 1000, numberTeacher+1);
+				setTimeout(bypass, 3000, numberTeacher+1);
 			}
 		}
 		bypass(0);
