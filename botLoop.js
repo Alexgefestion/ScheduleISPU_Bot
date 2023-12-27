@@ -6,7 +6,7 @@ const ScheduleStudent = new GetScheduleStudent();
 
 const fs = require('fs');
 const TelegramBot = require('node-telegram-bot-api');
-const token = '5524650278:AAGxF-RtKDu8xZSMGrXHCDllcds-5SL8UxA';
+const token = '56524650278:AAGxF-RtKDu8xZSMGrXHCDllcds-5SL8UxA';
 const bot = new TelegramBot(token, {polling: true});
 
 
